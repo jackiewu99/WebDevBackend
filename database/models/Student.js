@@ -20,11 +20,13 @@ const Student = db.define("student", {
 
   imageUrl: {
     type: Sequelize.STRING,
-    defaultValue: false
+    defaultValue: "https://picsum.photos/200"
   },
 
   gpa:{
-    type: Sequelize.INTEGER
+    type: Sequelize.FLOAT,
+    defaultValue: 0.0,
+    len: [0.0,4.0]
   },
 
 
